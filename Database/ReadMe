@@ -1,0 +1,7 @@
+##ReadMe
+#Anil Niraula
+
+#This folder contains files for filtering Reason database.
+#Some of the files containe state-level plan data, others state pension plan names in the datatabse.
+
+#The purpose is to upload these files to GitHub & then load them directly to R to optimize analysis and Shiny App syntax.
