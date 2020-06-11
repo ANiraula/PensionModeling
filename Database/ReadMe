@@ -11,7 +11,7 @@
 
 Way [1]
 ######## Download state-level data from "GitHub":
-##Use a combination of url() + read_scv
+##Use a combination of url() + read_csv()
 
 urlfile="https://raw.githubusercontent.com/ANiraula/PensionModeling/master/Database/reason.data.state.csv"
 reason.data <- read_csv(url(urlfile), col_names = TRUE, na = c(""), skip_empty_rows = TRUE, col_types = NULL)
