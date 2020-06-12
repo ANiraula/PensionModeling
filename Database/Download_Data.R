@@ -19,5 +19,5 @@ reason.data <- read_csv(url(urlfile), col_names = TRUE, na = c(""), skip_empty_r
 library(pensionviewr)#more info: https://github.com/ReasonFoundation/pensionviewr
 library(dplyr)
 #RUN THIS:
-reason.data  <- pullData(pl, pl$display_name)) %>% arrange(state)
+reason.data  <- pullData(pl, pl$display_name) %>% arrange(state)
 reason.data <- reason.data %>% filter(administering_government_type == 0)#To filter for state-level plans
