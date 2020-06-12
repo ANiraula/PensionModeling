@@ -8,13 +8,12 @@
 ###for filtering out sample of data variable we commonly use in pension analysis
 
 #>>data is the database you are using (e.g. "reason.data")
-#>>x is "state"
-#>>y is "plan_name"
+#>>x is "plan name"
 #>>fy is starting "year"
 
-filteredData <- function(data, y, fy){
+filteredData <- function(data, plan, fy){
   Plan <- data %>%
-    filter(display_name == y)
+    filter(display_name == x)
   Plan <- Plan %>%
     filter(year > fy-1)
   Plan <- Plan %>%
